@@ -240,7 +240,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &138989592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9128,6 +9128,6 @@ SceneRoots:
   - {fileID: 104521187}
   - {fileID: 1198956699}
   - {fileID: 378434888}
-  - {fileID: 2134706628}
   - {fileID: 1183347479}
   - {fileID: 1536436937}
+  - {fileID: 2134706628}
