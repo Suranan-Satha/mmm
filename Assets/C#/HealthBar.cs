@@ -4,8 +4,8 @@ using System.Collections;
 
 public class HealthBar : MonoBehaviour
 {
-    public Slider slider;      // ลาก Slider ของคุณมาที่นี่
-    public Text valueText;     // (ไม่จำเป็น) ถ้าต้องการตัวเลข HP
+    public Slider slider;      
+    public Text valueText;     
     private Coroutine smoothCoroutine;
 
     public void SetMaxHealth(float max)
@@ -26,7 +26,6 @@ public class HealthBar : MonoBehaviour
             return;
         }
 
-        // หยุด coroutine ก่อนหน้า (ถ้ามี) แล้วเริ่มการเปลี่ยนแบบนุ่มใหม่
         if (smoothCoroutine != null) StopCoroutine(smoothCoroutine);
         smoothCoroutine = StartCoroutine(SmoothChange(slider.value, current, 0.25f));
     }
