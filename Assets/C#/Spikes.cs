@@ -3,13 +3,25 @@ using UnityEngine;
 public class Spikes : MonoBehaviour
 {
     public float damage = 10f;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+    
+    public float forceX = 5f;
+    public float forceY = 5f;
+    public float duration = 0.2f;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("PlayerStats"))
         {
             Debug.Log("Player hit by spikes");
-            collision.GetComponent<PlayerStats>().TakeDamage(damage);
+            PlayerStats playerStats = collision.GetComponent<PlayerStats>();
+            playerStats.TakeDamage(damage);
+
+            PlayerMoveControls pmc = playerStats.GetComponentInParent<PlayerMoveControls>();
+            if (pmc != null)
+            {
+                StartCoroutine(pmc.KnockBack(forceX, forceY, duration, transform));
+            }
         }
     }
 }

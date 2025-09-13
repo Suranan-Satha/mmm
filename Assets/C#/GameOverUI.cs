@@ -17,4 +17,10 @@ public class GameOverUI : MonoBehaviour
         if (gameOverPanel != null)
             gameOverPanel.SetActive(true); 
     }
+
+    public void RestartLevel()
+    {
+        Scene currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(currentScene.name);
+    }
 }
