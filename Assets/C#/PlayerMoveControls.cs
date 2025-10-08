@@ -12,6 +12,7 @@ public class PlayerMoveControls : MonoBehaviour
     public Transform leftPoint;
     private bool grounded = false;
     private bool knockBack = false;
+    private int direction = 1; 
     // Start is called before the first frame update
     void Start()
     {
@@ -20,14 +21,12 @@ public class PlayerMoveControls : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         
         SetAnimatorValues();
     }
-    private int direction = 1; // to right-hand side
-    //...
+
     private void FixedUpdate()
     {
         CheckStatus();

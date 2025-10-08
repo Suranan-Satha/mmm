@@ -9,17 +9,15 @@ public class PlayerStats : MonoBehaviour
     private bool canTakeDamage = true;
 
     private Animator anim;
-
-    // UI / GameOver refs
-    public HealthBar healthBar;       // ลากออบเจ็ก HealthBar ลงใน Inspector
-    public GameOverUI gameOverUI;     // ลากออบเจ็ก GameOverUI (panel) ลงใน Inspector
+    public HealthBar healthBar;       
+    public GameOverUI gameOverUI;     
 
     void Start()
     {
         anim = GetComponentInParent<Animator>();
         health = maxHealth;
 
-        // ตั้งค่าเริ่มต้นให้ UI (ถ้ามี)
+        
         if (healthBar != null)
         {
             healthBar.SetMaxHealth(maxHealth);
@@ -27,7 +25,7 @@ public class PlayerStats : MonoBehaviour
         }
     }
 
-    // เรียกเมื่อโดนโจมตี
+
     public void TakeDamage(float damage)
     {
         if (!canTakeDamage)
@@ -40,7 +38,7 @@ public class PlayerStats : MonoBehaviour
 
         anim.SetBool("Damage", true);
 
-        // อัพเดต UI
+       
         if (healthBar != null)
         {
             healthBar.SetHealth(health);
@@ -48,7 +46,7 @@ public class PlayerStats : MonoBehaviour
 
         if (health <= 0)
         {
-            // ปิด collider / ควบคุม และแจ้งตาย
+           
             var poly = GetComponent<PolygonCollider2D>();
             if (poly != null) poly.enabled = false;
 
@@ -57,7 +55,7 @@ public class PlayerStats : MonoBehaviour
 
             Debug.Log("Player is dead");
 
-            // แสดง Game Over (ถ้ามี)
+            
             if (gameOverUI != null)
             {
                 gameOverUI.ShowGameOver();

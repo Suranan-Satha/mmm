@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - PlayerStats
+  - EnemyStats
   layers:
   - Default
   - TransparentFX
@@ -17,8 +18,8 @@ TagManager:
   - PlayerStats
   - Enemy Attack
   - Enemy
-  - 
-  - 
+  - PlayerAttack
+  - EnemyStats
   - 
   - 
   - 

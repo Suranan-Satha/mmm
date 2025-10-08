@@ -13,6 +13,7 @@ public class EnemyAttack : MonoBehaviour
             playerStats.TakeDamage(damage);
 
             SpecialAttack();
+            Debug.Log("Hit PlayerStats Tag");
         }
     }
 

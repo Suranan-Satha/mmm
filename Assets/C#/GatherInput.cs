@@ -7,6 +7,8 @@ public class GatherInput : MonoBehaviour
     public float valueX;
     public bool jumpInput;
 
+    public bool tryAttack;
+
     public void Awake()
     {
         myControl = new Controls();
@@ -20,6 +22,9 @@ public class GatherInput : MonoBehaviour
         myControl.Player.Jump.performed += JumpStart;
         myControl.Player.Jump.canceled += JumpStop;
 
+        myControl.Player.Attack.performed += TryToAttach;
+        myControl.Player.Attack.canceled += StopTryToAttack;
+
         myControl.Player.Enable();
     }
     private void OnDisable()
@@ -28,10 +33,28 @@ public class GatherInput : MonoBehaviour
         myControl.Player.Move.canceled -= StopMove;
         myControl.Player.Disable();
         //myControl.Disable();
+
         myControl.Player.Jump.performed -= JumpStart;
         myControl.Player.Jump.canceled -= JumpStop;
 
+        myControl.Player.Attack.performed -= TryToAttach;
+        myControl.Player.Attack.canceled -= StopTryToAttack;
+
         myControl.Player.Disable();
+    }
+    public void DisableControls()
+    {
+        myControl.Player.Move.performed -= StartMove;
+        myControl.Player.Move.canceled -= StopMove;
+
+        myControl.Player.Jump.performed -= JumpStart;
+        myControl.Player.Jump.canceled -= JumpStop;
+
+        myControl.Player.Attack.performed -= TryToAttach;
+        myControl.Player.Attack.canceled -= StopTryToAttack;
+
+        myControl.Player.Disable();
+        valueX = 0;
     }
     private void StartMove(InputAction.CallbackContext ctx)
     {
@@ -50,17 +73,13 @@ public class GatherInput : MonoBehaviour
     {
         jumpInput = false;
     }
-
-    public void DisableControls()
+    private void TryToAttach(InputAction.CallbackContext ctx)
     {
-        myControl.Player.Move.performed -= StartMove;
-        myControl.Player.Move.canceled -= StopMove;
-
-        myControl.Player.Jump.performed -= JumpStart;
-        myControl.Player.Jump.canceled -= JumpStop;
-
-        myControl.Player.Disable();
-        valueX = 0;
+        tryAttack = true;
+    }
+    private void StopTryToAttack(InputAction.CallbackContext ctx)
+    {
+        tryAttack = false;
     }
 
 
