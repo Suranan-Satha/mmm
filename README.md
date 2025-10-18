@@ -105,11 +105,13 @@
 
 ### 😎 ศัตรู (Enemy)
 
-แสดงภาพหน้าจอเมื่อศัตรูเดินและทำดาเมจต่อผู้เล่นและเมื่อตัวละครผู้เล่นได้รับความเสียหาย ให้ทำการลดเลือดและเล่นอนิเมชั่นของตัวละครผู้เล่น
+แสดงภาพหน้าจอเมื่อศัตรูเดินและทำดาเมจต่อผู้เล่นและเมื่อตัวละครผู้เล่นได้รับความเสียหาย ให้ทำการลดเลือดและเล่นอนิเมชั่นของตัวละครผู้เล่น 
 <img width="801" height="403" alt="image" src="https://github.com/user-attachments/assets/e0676852-d57a-469f-9c04-fac68137090f" />
 <img width="1103" height="563" alt="image" src="https://github.com/user-attachments/assets/5d0ab9df-c371-4c19-a9d0-649f28243487" />
 
-
+## ผู้เล่นสามรถทำดาเมจและฆ่าศัตรูได้
+<img width="1414" height="788" alt="image" src="https://github.com/user-attachments/assets/dfe4e005-face-42d2-b62f-a99bf487ab2c" />
+<img width="1406" height="793" alt="image" src="https://github.com/user-attachments/assets/b4f196d2-65cd-47db-b619-95075bc56753" />
 
 ### ❤️‍🩹 บาดเจ็บ (Hurt / Taking Damage)
 
@@ -125,7 +127,7 @@
 <img width="1037" height="628" alt="image" src="https://github.com/user-attachments/assets/cea3cd9f-5791-4925-ad50-b70fb99530ed" />
 
 ### 👩‍🦯 การเปลี่ยนฉาก(Scene change)
-แสดงภาพหน้าจอUIและการเปลี่ยนแต่ละซีน โดยใช้ประตูเป็นตัวเชื่อม มีทั้งหมด 5 ด่าน
+แสดงภาพหน้าจอUIและการเปลี่ยนแต่ละซีน โดยใช้ประตูเป็นตัวเชื่อม มีทั้งหมด 5 ด่าน 
 <img width="1407" height="789" alt="image" src="https://github.com/user-attachments/assets/a58c316a-afd9-44e7-923a-6136468bf6e1" />
 <img width="2559" height="1439" alt="image" src="https://github.com/user-attachments/assets/63b5d712-6732-418e-89e6-82cc14161ec2" />
 <img width="2559" height="1439" alt="image" src="https://github.com/user-attachments/assets/d31e03e6-b6ab-4244-b7eb-ddbd9cbf7d14" />
