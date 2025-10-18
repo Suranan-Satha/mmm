@@ -128,15 +128,15 @@
 แสดงภาพหน้าจอUIและการเปลี่ยนแต่ละซีน โดยใช้ประตูเป็นตัวเชื่อม
 หน้าเข้าเกมส์
 <img width="1407" height="789" alt="image" src="https://github.com/user-attachments/assets/a58c316a-afd9-44e7-923a-6136468bf6e1" />
-##  ด่าน1
+# ด่าน1
 <img width="2559" height="1439" alt="image" src="https://github.com/user-attachments/assets/63b5d712-6732-418e-89e6-82cc14161ec2" />
-##  ด่าน2
+# ด่าน2
 <img width="2559" height="1439" alt="image" src="https://github.com/user-attachments/assets/d31e03e6-b6ab-4244-b7eb-ddbd9cbf7d14" />
-##  ด่าน3
+# ด่าน3
 <img width="2559" height="1439" alt="image" src="https://github.com/user-attachments/assets/a994285b-9c21-4e9f-8412-b97bdb16c5ff" />
-##  ด่าน4
+# ด่าน4
 <img width="2559" height="1439" alt="image" src="https://github.com/user-attachments/assets/fbc2432c-64e8-4e26-9d08-48276c06d03e" />
-##  ด่าน5
+# ด่าน5
 <img width="2559" height="1439" alt="image" src="https://github.com/user-attachments/assets/a9699a92-3626-419a-805b-625a54a00384" />
 
 
