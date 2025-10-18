@@ -126,7 +126,8 @@
 
 ### 👩‍🦯 การเปลี่ยนฉาก(Scene change)
 แสดงภาพหน้าจอUIและการเปลี่ยนแต่ละซีน โดยใช้ประตูเป็นตัวเชื่อม
-หน้าเข้าเกมส์
+
+## หน้าเข้าเกมส์
 <img width="1407" height="789" alt="image" src="https://github.com/user-attachments/assets/a58c316a-afd9-44e7-923a-6136468bf6e1" />
 ## ด่าน1
 <img width="2559" height="1439" alt="image" src="https://github.com/user-attachments/assets/63b5d712-6732-418e-89e6-82cc14161ec2" />
