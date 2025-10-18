@@ -68,7 +68,7 @@ public class PlayerStats : MonoBehaviour
     private IEnumerator DamagePrevention()
     {
         canTakeDamage = false;
-        yield return new WaitForSeconds(0.15f);
+        yield return new WaitForSeconds(0.3f);
         if (health > 0)
         {
             canTakeDamage = true;
