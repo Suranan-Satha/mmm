@@ -163,6 +163,5 @@
 1.  สคริปต์ `PlayerStats.cs` จะตรวจจับว่าผู้เล่นตายแล้ว
 2.  จากนั้นจะเรียกเมธอด `ShowGameOver()` จากสคริปต์ `GameOverUI.cs`
 3.  `GameOverUI.cs` จะสั่งให้ `gameOverPanel` (ซึ่งถูกซ่อนไว้ในตอนแรก) แสดงผลขึ้นมา
-4.  ผู้เล่นสามารถกดปุ่มบนหน้าจอ Game Over เพื่อเรียกใช้ฟังก์ชัน `RestartLevel()` เพื่อเริ่มต้นด่านใหม่ได้
 <img width="1514" height="833" alt="image" src="https://github.com/user-attachments/assets/057c5b1c-7403-4c5b-b191-6d2630307ae3" />
 
